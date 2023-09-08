@@ -126,8 +126,6 @@ header .header-cont {
 .about-me .about-cont .left {
     flex: 1;
 }
-.about-me .about-cont .left .toolkit {
-}
 .about-me .about-cont .left .toolkit h4 {
     color: #606060;
     font-size: 18px;
@@ -178,7 +176,7 @@ header .header-cont {
 }
 .latest-cont .work-line-cont {
     width: 100%;
-    display: flex;
+    display: inline-block;
     flex-direction: row;
 }
 .latest-cont .work-line-cont .work-line {
@@ -195,7 +193,12 @@ header .header-cont {
 }
 .latest-cont .work-line-cont .work-line .line-flex {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    /* width: 100%; */
+}
+.line-flex{
+    width: 90vw;
+    padding-left: 50px;
 }
 .latest-cont .work-line-cont .work-line .line-flex .flex-image {
     flex: 1;
@@ -206,6 +209,10 @@ header .header-cont {
 }
 .latest-cont .work-line-cont .work-line .line-flex .flex-info {
     flex: 1;
+}
+.flex-info{
+    padding: 20px;
+    margin-top: 50px;
 }
 .latest-cont .work-line-cont .work-line .line-flex .flex-info p{
     color: #000;
